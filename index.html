@@ -6,22 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="css/styleMobile.css">
   <title>E-commerce product page</title>
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <div class="menuHamburguer">
-        <img src="images/icon-menu.svg" alt="OpenMenuHamburguer">
-        <img src="images/icon-close.svg" alt="closeMenuHamburguer">
+      <div class="wrap">
+        <img src="images/icon-menu.svg" alt="OpenMenuHamburguer" class="OpenMenuHamburguer">
+        <img src="images/logo.svg" alt="logo" class="logo">
+        <nav class="navBar">
       </div>
-      <div class="logo">
-        <img src="images/logo.svg" alt="logo">
-      </div>
-      <nav class="navBar">
-        <ul class="navList">
+        <ul class="navList hidden">
+          <img src="images/icon-close.svg" alt="closeMenuHamburguer" class="closeMenuHamburguer">
           <li class="navLinks">Collections</li>
           <li class="navLinks">Men</li>
           <li class="navLinks">Women</li>
@@ -33,22 +31,24 @@
             <img src="images/icon-cart.svg" alt="myCar">
           </li>
           <li class="linkIcon">
-            <img src="images/image-avatar.png" alt="iconAvatar">
+            <img src="images/image-avatar.png" alt="iconAvatar" class="iconAvatar">
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <div class="productSample">
-        <div class="imageInFocus">
-          <img src="images/icon-previous.svg">
-          <img src="images/icon-next.svg">
-          <img src="images/image-product-1.jpg">
-          <img src="images/image-product-2.jpg">
-          <img src="images/image-product-3.jpg">
-          <img src="images/image-product-4.jpg">
+        <div class="arrow">
+          <img src="images/icon-previous.svg" class="arrowPrevious">
+          <img src="images/icon-next.svg" class="arrowNext">
         </div>
-        <div class="thumbnailProducts">
+        <div class="imageInFocus">
+          <img src="images/image-product-1.jpg" class="primaryImage">
+          <img src="images/image-product-2.jpg" class="primaryImage">
+          <img src="images/image-product-3.jpg" class="primaryImage">
+          <img src="images/image-product-4.jpg" class="primaryImage">
+        </div>
+        <div class="thumbnailProducts hidden">
           <img src="images/image-product-1-thumbnail.jpg">
           <img src="images/image-product-2-thumbnail.jpg">
           <img src="images/image-product-3-thumbnail.jpg">
@@ -56,33 +56,35 @@
         </div>
       </div>
       <div class="ProductDescription">
-        <p>
+        <p class="sneakerCompany">
           Sneaker Company
         </p>
-        <h1>
+        <h1 class="mainTitle">
           Fall Limited Edition Sneakers
         </h1>
-        <p>
+        <p class="mainParagraph">
           These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.
         </p>
-        <p>
-          $125.00
-        </p>
-        <p>
-          50%
-        </p>
-        <p>
-          $250.00
-        </p>
-        <div class="quantityOfItems">
-          <img src="images/icon-plus.svg">
-          <p>
+        <div class="price">
+          <p class="itemPrice">
+            $125.00
+          </p>
+          <p class="itemDiscount">
+            50%
+          </p>
+          <p class="totalPrice">
+            $250.00
+          </p>
+        </div>
+        <div class="quantityOfItemsWrap">
+          <img src="images/icon-minus.svg" class="iconMinus">
+          <p class="quantityOfItems">
             0
           </p>
-          <img src="images/icon-minus.svg">
+          <img src="images/icon-plus.svg" class="iconPlus">
         </div>
-        <input type="button" src="images/icon-cart.svg" value="Add to cart">
+          <input type="button" src="images/icon-cart.svg" value="Add to cart" class="BtnAddToCart">
       </div>
     </main>
   </div>
