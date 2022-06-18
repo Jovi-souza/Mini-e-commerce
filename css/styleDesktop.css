@@ -1,0 +1,137 @@
+@media screen and (min-width: 1360px) {
+
+    /* Header */
+    .header {
+        background-color: #fff;
+        padding: 1.5em;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #68707d;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        margin-left: 5em;
+    }
+
+    .carAndIcon {
+        align-items: center;
+    }
+
+    .linkIcon {
+        margin-top: .3em;
+        font-size: 2em;
+    }
+
+    .closeMenuHamburguer,
+    .OpenMenuHamburguer {
+        display: none;
+    }
+
+    .navList {
+        display: flex;
+        background-color: #fff;
+        margin-left: -20em;
+
+        position: initial;
+        height: initial;
+        width: initial;
+        padding: initial;
+        z-index: initial;
+    }
+
+    .navLinks {
+        margin: 0 1em;
+    }
+
+    /* Main */
+
+    .main {
+        display: flex;
+        width: max-content;
+        margin: auto;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .productSample {
+        width: 35vw;
+        margin: 4em 4em 0 0;
+    }
+
+    .primaryImage {
+        width: 35vw;
+        border-radius: 15px;
+    }
+
+    .thumbnailProducts {
+        display: flex;
+        margin: 1.5em 0;
+        justify-content: space-between;
+    }
+
+    .ThumbnailImage {
+        width: 6.5em;
+        border-radius: 15px;
+    }
+
+    .ProductDescription {
+        width: 30em;
+        margin: auto 0;
+    }
+
+    .sneakerCompany {
+        font-size: .8em;
+    }
+
+    .mainTitle {
+        font-size: 3em;
+    }
+
+    .mainParagraph {
+        font-size: 1em;
+    }
+
+
+
+    .price {
+        width: 8em;
+        flex-wrap: wrap;
+        margin: 2em 0;
+    }
+
+
+    .totalPrice {
+        margin: .1rem 0 0;
+    }
+
+    .quantityOfItemsWrap {
+        margin: 1.5em 0;
+        padding: 1em;
+        border-radius: 10px;
+        width: 8em;
+        justify-content: space-between;
+    }
+
+    .WrapPriceCart {
+        display: flex;
+        align-items: center;
+    }
+
+    .iconMinus {
+        width: .6rem;
+    }
+
+    .iconPlus {
+        height: .5rem;
+    }
+
+    .BtnAddToCart {
+        height: max-content;
+        width: 50%;
+        margin-left: 1em;
+        padding: 1.3em;
+    }
+}

@@ -132,6 +132,10 @@
     width: 100vw;
 }
 
+.thumbnailProducts {
+    display: none;
+}
+
 .ProductDescription {
     padding: 1.2em;
 }
