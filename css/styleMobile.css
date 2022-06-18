@@ -28,13 +28,43 @@
     display: flex;
 }
 
-.linkCar{
+.linkCart{
     height: 1em;
 }
 
 .iconAvatar {
     width: 1.2em;
     margin-left: 1em;
+}
+
+.CartMenu {
+    background-color: #f7f8fd;
+
+    position: absolute;
+    top: 3.8em;
+    left: .3em;
+
+    width: 97%;
+    height: 50vh;
+
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.308);
+    z-index: 99;
+}
+
+.CartMenuTitle {
+    margin: 1.5em 1em;
+}
+
+.CartMenuParagraph {
+    background-color: #f7f8fd;
+    text-align: center;
+
+    border-top: 1px solid #b6bcc8;
+    padding-top: 25%;
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: 1px;
 }
 
 /* menu hamburguer */
@@ -55,8 +85,8 @@
     left: 0;
     width: 60vw;
     height: 100vh;
-
     padding: 1em;
+    z-index: 100;
 }
 
 .navLinks {
