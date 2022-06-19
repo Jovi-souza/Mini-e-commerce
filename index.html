@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styleMobile.css">
   <link rel="stylesheet" href="css/styleDesktop.css">
+  <script src="js/MenuHamburguer.js" defer></script>
   <title>E-commerce product page</title>
 </head>
 
@@ -15,12 +16,11 @@
   <div class="container">
     <header class="header">
       <div class="wrap">
-        <img src="images/icon-menu.svg" alt="OpenMenuHamburguer" class="OpenMenuHamburguer">
+        <img src="images/icon-menu.svg" alt="OpenMenuHamburguer" class="OpenMenuHamburguer" onclick="OpenMenuHamburguer()">
         <img src="images/logo.svg" alt="logo" class="logo">
-        <nav class="navBar">
       </div>
-      <ul class="navList ">
-        <img src="images/icon-close.svg" alt="closeMenuHamburguer" class="closeMenuHamburguer">
+      <ul class="navList hidden" id="MenuHamburguer">
+        <img src="images/icon-close.svg" alt="closeMenuHamburguer" class="closeMenuHamburguer" onclick="CloseMenuHamburguer()">
         <li class="navLinks">Collections</li>
         <li class="navLinks">Men</li>
         <li class="navLinks">Women</li>
@@ -39,7 +39,6 @@
         <h4 class="CartMenuTitle">Cart</h4>
         <p class="CartMenuParagraph">Your cart is empty.</p>
       </div>
-      </nav>
     </header>
     <main class="main">
       <div class="productSample">
