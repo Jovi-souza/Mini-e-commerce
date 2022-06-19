@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/styleDesktop.css">
   <script src="js/MenuHamburguer.js" defer></script>
   <script src="js/AddQuantidadeDeItens.js"></script>
+  <script src="js/OpenMyCart.js"></script>
   <title>E-commerce product page</title>
 </head>
 
@@ -32,13 +33,13 @@
       </ul>
       <ul class="carAndIcon">
         <li class="linkCart">
-          <img src="images/icon-cart.svg" alt="myCar">
+          <img src="images/icon-cart.svg" alt="MyCart" id="Mycart" onclick="OpenMyCart()">
         </li>
         <li class="linkIcon">
           <img src="images/image-avatar.png" alt="iconAvatar" class="iconAvatar">
         </li>
       </ul>
-      <div class="CartMenu hidden">
+      <div class="CartMenu hidden" id="CartMenu">
         <h4 class="CartMenuTitle">Cart</h4>
         <p class="CartMenuParagraph">Your cart is empty.</p>
       </div>

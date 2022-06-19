@@ -11,6 +11,7 @@
 
 .hidden {
     display: none;
+    transition: all 1s;
 }
 /* header */
 .header {
@@ -30,6 +31,7 @@
 
 .linkCart{
     height: 1em;
+    cursor: pointer;
 }
 
 .iconAvatar {
