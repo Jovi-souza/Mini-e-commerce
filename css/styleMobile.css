@@ -194,7 +194,7 @@
     margin: .1rem 0 0 auto;
 }
 
-.quantityOfItemsWrap {
+.quantityOfItensWrap {
     background-color: #f7f8fd;
     
     display: flex;
@@ -204,7 +204,7 @@
     justify-content: space-between;
 }
 
-.quantityOfItems {
+.quantityOfItens {
     font-weight: 700;
 }
 
@@ -212,9 +212,11 @@
     height: .2rem;
     width: .8rem;
     margin: auto 0;
+    cursor: pointer;
 }
 
 .iconPlus {
+    cursor: pointer;
     margin: auto 0;
     height: .6rem;
 }
