@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/styleMobile.css">
   <link rel="stylesheet" href="css/styleDesktop.css">
   <script src="js/MenuHamburguer.js" defer></script>
-  <script src="js/AddQuantidadeDeItens.js"></script>
-  <script src="js/OpenMyCart.js"></script>
+  <script src="js/AddQuantidadeDeItens.js" defer></script>
+  <script src="js/OpenMyCart.js" defer></script>
   <title>E-commerce product page</title>
 </head>
 
@@ -34,9 +34,7 @@
       <ul class="carAndIcon">
         <li class="linkCart">
           <img src="images/icon-cart.svg" alt="MyCart" id="Mycart" onclick="OpenMyCart()">
-          <p class="ItensInMyCart" id="ItensInMyCart">
-            
-          </p>
+          <p class="NumberOfItensInMyCart" id="NumberOfItensInMyCart"></p>
         </li>
         <li class="linkIcon">
           <img src="images/image-avatar.png" alt="iconAvatar" class="iconAvatar">
@@ -44,7 +42,18 @@
       </ul>
       <div class="CartMenu hidden" id="CartMenu">
         <h4 class="CartMenuTitle">Cart</h4>
-        <p class="CartMenuParagraph">Your cart is empty.</p>
+        <p class="CartMenuParagraph hidden">Your cart is empty.</p>
+        <div class="ItemsInMycartWrap">
+          <div class="ItemsInMycart">
+            <img src="images/image-product-1-thumbnail.jpg" class="ImageOfMyItemInCart">
+            <h3 class="ProductsName">Atumn LImited Edition</h3>
+            <p class="PriceOfProducts">$125 x</p>
+            <p class="NumberOfItens" id="NumberOfItens"></p>
+            <p class="ValueTotal" id="ValueTotal">$ </p>
+            <img src="images/icon-delete.svg" class="DeleteItens" id="DeleteItens">
+            <button class="ItensCheckout">Checkout</button>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -100,7 +109,7 @@
             </p>
             <img src="images/icon-plus.svg" class="iconPlus" id="AddItens" onclick="AddItens()">
           </div>
-          <input type="button" src="images/icon-cart.svg" value="Add to cart" class="BtnAddToCart">
+          <input type="button" src="images/icon-cart.svg" value="Add to cart" class="BtnAddToCart" id="BtnAddToCart">
         </div>
       </div>
     </main>

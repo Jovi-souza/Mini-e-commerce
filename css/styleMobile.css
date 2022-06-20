@@ -11,8 +11,8 @@
 
 .hidden {
     display: none;
-    transition: all 1s;
 }
+
 /* header */
 .header {
     background-color: #f7f8fd;
@@ -25,21 +25,22 @@
 .logo {
     height: 1em;
 }
+
 .carAndIcon {
     display: flex;
 }
 
-.linkCart{
+.linkCart {
     height: 1em;
     cursor: pointer;
     position: relative;
 }
 
-.ItensInMyCart {
+.NumberOfItensInMyCart {
     color: #f7f8fd;
     background-color: #ff7d1a;
     font-size: .6em;
-    
+
     padding: 0 .5em;
     border-radius: 10px;
 
@@ -75,12 +76,93 @@
 .CartMenuParagraph {
     background-color: #f7f8fd;
     text-align: center;
-    
+
     border-top: 1px solid #b6bcc8;
     padding-top: 25%;
     font-weight: 700;
     font-size: .8em;
     letter-spacing: 1px;
+}
+
+.ItemsInMycartWrap {
+    border-top: 1px solid #b6bcc8;
+}
+
+.ItemsInMycart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.ImageOfMyItemInCart {
+    height: 3em;
+    border-radius: 5px;
+    margin: 1em 1em .5em 1em;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ProductsName {
+    color: #68707d;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 1.3em 0 0 0;
+
+    grid-column: 2/5;
+    grid-row: 1/1;
+}
+
+.PriceOfProducts {
+    color: #68707d;
+    font-weight: 400;
+
+    grid-column: 2/2;
+    grid-row: 1/1;
+
+    margin: 2.8em 0 0 0;
+}
+
+.NumberOfItens {
+    color: #68707d;
+    font-weight: 400;
+
+    grid-column: 2/2;
+    grid-row: 1/1;
+
+    margin: 2.8em 0 0 3.5em;
+}
+
+.ValueTotal {
+    color: #000;
+    font-weight: 700;
+
+    grid-column: 3/3;
+    grid-row: 1/2;
+
+    margin: 2.8em 0 0 0;
+}
+
+.DeleteItens {
+    grid-column: 4/5;
+    grid-row: 1/1;
+
+    width: 1em;
+    margin: 2.2em 0 0 3em;
+}
+
+.ItensCheckout {
+    grid-column: 1/5;
+    grid-row: 2/2;
+
+    height: 3.5em;
+    margin: 2em 1em 0 1em;
+
+    background-color: #ff7d1a;
+    color: #f7f8fd;
+
+    border-radius: 5px;
+    border: none;
 }
 
 /* menu hamburguer */
@@ -116,19 +198,19 @@
 }
 
 .arrowPrevious {
-    background-color: #f7f8fd; 
+    background-color: #f7f8fd;
     padding: 3vw;
     height: 2.1em;
     width: 2.1em;
     border-radius: 50%;
-    
+
     position: absolute;
     left: 1em;
     top: 9em;
 }
 
 .arrowNext {
-    background-color: #f7f8fd; 
+    background-color: #f7f8fd;
     padding: 3vw;
     height: 2.1em;
     width: 2.1em;
@@ -195,7 +277,7 @@
     height: max-content;
     font-weight: 700;
     font-size: .8rem;
-    
+
     padding: 2px;
     margin: .1rem 0 0 .8em;
     border-radius: 5px;
@@ -212,7 +294,7 @@
 
 .quantityOfItensWrap {
     background-color: #f7f8fd;
-    
+
     display: flex;
     margin: 1.5em 0;
     padding: 1em;
@@ -236,7 +318,7 @@
     margin: auto 0;
     height: .6rem;
 }
-  
+
 .BtnAddToCart {
     background-color: #ff7d1a;
     color: #f7f8fd;

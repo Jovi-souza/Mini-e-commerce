@@ -44,6 +44,13 @@
         margin: 0 1em;
     }
 
+    .CartMenu {
+        left: 62em;
+        top: 5.5em;
+        width: 20em;
+        height: 15em;
+    }
+
     /* Main */
 
     .main {
