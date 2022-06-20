@@ -116,31 +116,34 @@
 .PriceOfProducts {
     color: #68707d;
     font-weight: 400;
+    font-size: .8em;
 
     grid-column: 2/2;
     grid-row: 1/1;
 
-    margin: 2.8em 0 0 0;
+    margin: 3.5em 0 0 0;
 }
 
-.NumberOfItens {
+.AmountOfProduct {
     color: #68707d;
     font-weight: 400;
+    font-size: .8em;
 
     grid-column: 2/2;
     grid-row: 1/1;
 
-    margin: 2.8em 0 0 3.5em;
+    margin: 3.5em 0 0 5em;
 }
 
 .ValueTotal {
     color: #000;
     font-weight: 700;
+    font-size: .8em;
 
     grid-column: 3/3;
     grid-row: 1/2;
 
-    margin: 2.8em 0 0 0;
+    margin: 3.5em 0 0 .5em;
 }
 
 .DeleteItens {

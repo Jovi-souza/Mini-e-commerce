@@ -1,10 +1,11 @@
 let valor = 0
 
-
 const DOMSelectors = {
     NumberOfItens: document.querySelector('#NumberOfItens'),
     QuantityOfItems: document.querySelector('#QuantityOfItens'),
-    NumberOfItensInMyCart: document.querySelector('#NumberOfItensInMyCart')
+    NumberOfItensInMyCart: document.querySelector('#NumberOfItensInMyCart'),
+    AmountOfProduct: document.querySelector('#AmountOfProduct'),
+    ValueTotal: document.querySelector('#ValueTotal')
 }
 
 const AddItens = () => {
@@ -12,6 +13,9 @@ const AddItens = () => {
 
     DOMSelectors.QuantityOfItems.innerHTML = valor
     DOMSelectors.NumberOfItensInMyCart.innerHTML = valor
+    DOMSelectors.AmountOfProduct.innerHTML = valor
+
+    DOMSelectors.ValueTotal.innerHTML = (valor * 125).toFixed(2).replace('.', ',')
 }
 
 const RemoveItens = () => {
@@ -23,4 +27,7 @@ const RemoveItens = () => {
 
     DOMSelectors.QuantityOfItems.innerHTML = valor
     DOMSelectors.NumberOfItensInMyCart.innerHTML = valor
+    DOMSelectors.AmountOfProduct.innerHTML = valor
+
+    DOMSelectors.ValueTotal.innerHTML = (valor * 125).toFixed(2).replace('.', ',')
 }
