@@ -11,6 +11,7 @@
   <script src="js/MenuHamburguer.js" defer></script>
   <script src="js/AddQuantidadeDeItens.js" defer></script>
   <script src="js/OpenMyCart.js" defer></script>
+  <script src="js/RemoveItemsFromMyCart.js"></script>
   <title>E-commerce product page</title>
 </head>
 
@@ -40,17 +41,17 @@
           <img src="images/image-avatar.png" alt="iconAvatar" class="iconAvatar">
         </li>
       </ul>
-      <div class="CartMenu" id="CartMenu">
+      <div class="CartMenu hidden" id="CartMenu">
         <h4 class="CartMenuTitle">Cart</h4>
-        <p class="CartMenuParagraph hidden">Your cart is empty.</p>
-        <div class="ItemsInMycartWrap">
-          <div class="ItemsInMycart">
+        <div  class="CartMenuParagraph" id="CartMenuParagraph">Your cart is empty.</div>
+        <div class="ItemsInMycartWrap hidden" id="ItemsInMycartWrap">
+          <div class="ItemsInMycart" id="ItemsInMycart">
             <img src="images/image-product-1-thumbnail.jpg" class="ImageOfMyItemInCart">
             <h3 class="ProductsName">Atumn LImited Edition</h3>
             <p class="PriceOfProducts">$125,00 x</p>
             <p class="AmountOfProduct" id="AmountOfProduct"></p>
             <p class="ValueTotal" id="ValueTotal">$ </p>
-            <img src="images/icon-delete.svg" class="DeleteItens" id="DeleteItens">
+            <img src="images/icon-delete.svg" class="DeleteItens" id="DeleteItens" onclick="DeleteItems()">
             <button class="ItensCheckout">Checkout</button>
           </div>
         </div>
@@ -109,7 +110,7 @@
             </p>
             <img src="images/icon-plus.svg" class="iconPlus" id="AddItens" onclick="AddItens()">
           </div>
-          <input type="button" src="images/icon-cart.svg" value="Add to cart" class="BtnAddToCart" id="BtnAddToCart">
+          <input type="button" src="images/icon-cart.svg" value="Add to cart" class="BtnAddToCart" id="BtnAddToCart" onclick="PushToMyCart()">
         </div>
       </div>
     </main>
