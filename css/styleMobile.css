@@ -52,6 +52,13 @@
 .iconAvatar {
     width: 1.2em;
     margin-left: 1em;
+
+}
+
+.iconAvatar:hover {
+    box-sizing: border-box;
+    border: 2px solid #ff7d1a;
+    border-radius: 50px;
 }
 
 .CartMenu {
@@ -323,6 +330,10 @@
     height: .6rem;
 }
 
+.iconPlus:hover, .iconMinus:hover {
+    color: #ff7d1a96;
+}
+
 .BtnAddToCart {
     background-color: #ff7d1a;
     color: #f7f8fd;
@@ -333,4 +344,9 @@
 
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+}
+
+.BtnAddToCart:hover {
+    background-color: #ff7d1a96;
 }

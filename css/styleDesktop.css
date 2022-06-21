@@ -42,6 +42,35 @@
 
     .navLinks {
         margin: 0 1em;
+
+        cursor: pointer;
+        position: relative;
+
+        color: #b6bcc8;
+    }
+
+    .navLinks:hover {
+        color: #1d2025;
+        transition: 1s;
+    }
+
+    .navLinks::after {
+        content: ' ';
+        position: absolute;
+        bottom: -2.7em;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: #ff7d1a;
+    
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-in;
+    }
+
+    .navLinks:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
     }
 
     .CartMenu {
