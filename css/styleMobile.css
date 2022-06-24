@@ -234,7 +234,7 @@
 
 .imageInFocus {
     width: 100vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     display: flex;
     transition: transform 0.5 s ease-in-out;
     transform: translateX();

@@ -20,7 +20,6 @@ Active.forEach( Active => {
         if( imageInFocus < 0) {
             imageInFocus = NumberOfImages -1
         }
-        // console.log('yes baby', isPrevious, imageInFocus)
 
         primaryImage.forEach( () => {
             

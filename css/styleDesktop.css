@@ -93,6 +93,7 @@
     }
 
     .productSample {
+        overflow-x: hidden;
         width: 35vw;
         margin: 4em 4em 0 0;
     }
