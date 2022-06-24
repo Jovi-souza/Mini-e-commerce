@@ -25,8 +25,7 @@ Active.forEach( Active => {
         primaryImage.forEach( () => {
             
             primaryImage[imageInFocus].scrollIntoView({
-                inline: "center",
-                behavior: "smooth"
+                inline: "center"
             })
         })
     })
