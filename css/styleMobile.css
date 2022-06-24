@@ -233,8 +233,15 @@
 }
 
 .imageInFocus {
+    width: 100vw;
+    overflow-x: auto;
     display: flex;
-    overflow: hidden;
+    transition: transform 0.5 s ease-in-out;
+    transform: translateX();
+}
+
+.imageInFocus::-webkit-scrollbar {
+    display: none;
 }
 
 .primaryImage {
@@ -330,7 +337,8 @@
     height: .6rem;
 }
 
-.iconPlus:hover, .iconMinus:hover {
+.iconPlus:hover,
+.iconMinus:hover {
     color: #ff7d1a96;
 }
 
